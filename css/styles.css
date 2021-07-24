@@ -1,0 +1,207 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --hero-footer-color: #2f303a;
+  --second-button-color: #188ce8;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+
+/*фон хедера и футера #2F303A*/
+/*вторичный фон #F5F4FA*/
+
+.logo-link {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 26 px;
+  line-height: 1.19em;
+  font-weight: bold;
+}
+
+.logo-studio {
+  color: var(--black-text-color);
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  line-height: 1.19em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts-list .link {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+/* Секция герой*/
+
+.hero {
+  background: var(--hero-footer-color);
+  width: 1600px;
+  height: 500px;
+  text-align: center;
+}
+.hero-title {
+  color: var(--white-text-color);
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  background: var(--accent-color);
+  font: inherit;
+  width: 200px;
+  height: 50px;
+}
+
+.button-primary {
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background: var(--second-button-color);
+  color: var(--white-text-color);
+}
+/*Преимущества*/
+
+.hidden-title {
+  visibility: hidden;
+}
+
+.title-text {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14em;
+  font-weight: bold;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.71em;
+}
+
+/*Наши услуги*/
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Наша команда*/
+
+.team {
+  background: #f5f4fa;
+}
+.box {
+  width: 1600px;
+}
+.subtitle {
+  font-size: 16px;
+  line-height: 1.19em;
+}
+.title-card {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19em;
+}
+/*Футер*/
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 26 px;
+  line-height: 1.19em;
+}
+.footer .logo-studio {
+  color: var(--white-text-color);
+}
+.footer {
+  background: var(--hero-footer-color);
+  height: 252px;
+}
+.contacts {
+  font-style: normal;
+}
+.contact-letter {
+  color: var(--white-text-color);
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.link-mail,
+.link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71em;
+  text-decoration: none;
+}
+.link-mail:focus,
+.link-mail:hover {
+  color: var(--accent-color);
+}
+.link-tel:focus,
+.link-tel:hover {
+  color: var(--accent-color);
+}
+.portfolio-item {
+  text-decoration: none;
+  color: inherit;
+}
+/*Портфолио работ*/
+
+.filter-button {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.63em;
+  text-align: center;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.portfolio-item {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+.text-item {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
