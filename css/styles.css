@@ -23,6 +23,8 @@ body {
   background-color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -91,7 +93,7 @@ body {
   display: flex;
   align-items: center;
 }
-.ul {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -102,13 +104,16 @@ a {
   display: block;
 }
 
-.list-item + .list-item {
-  margin-left: 50px;
+.list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0;
 }
 .section-header {
   border-bottom: 1px solid #ececec;
@@ -118,7 +123,7 @@ a {
 .hero {
   background: var(--hero-footer-color);
   width: 1600px;
-  height: 500px;
+
   text-align: center;
 }
 .hero-title {
@@ -127,12 +132,19 @@ a {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+  margin: auto;
 }
 .button {
   background: var(--accent-color);
   font: inherit;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
 }
 
 .button-primary {
@@ -159,10 +171,14 @@ a {
   font-size: 14px;
   line-height: 1.14em;
   font-weight: bold;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .text {
   font-size: 14px;
   line-height: 1.71em;
+  margin: 0;
 }
 .quality-list {
   outline: 2px solid tomato;
@@ -184,6 +200,7 @@ a {
   font-weight: bold;
   margin: 0 0 50px 0;
 }
+
 .list-works {
   display: flex;
   align-items: flex-start;
@@ -192,20 +209,12 @@ a {
   padding: 0;
 }
 
-.section-work {
-  padding-top: 0;
-}
-
 /*Наша команда*/
 
 .team {
   background: #f5f4fa;
 }
-.box {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .subtitle {
   font-size: 16px;
   line-height: 1.19em;
@@ -215,6 +224,11 @@ a {
   font-size: 16px;
   line-height: 1.19em;
 }
+.team-cards {
+  display: flex;
+  flex-basis: calc((100%-60px) / 3);
+}
+
 /*Футер*/
 
 .footer-logo {
