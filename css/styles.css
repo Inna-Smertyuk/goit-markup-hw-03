@@ -37,9 +37,11 @@ body {
   font-family: 'Raleway', sans-serif;
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 26 px;
+  font-size: 26px;
   line-height: 1.19em;
   font-weight: bold;
+
+  margin-right: 93px;
 }
 
 .logo-studio {
@@ -82,7 +84,6 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid tomato;
 }
 
 .site-nav,
@@ -116,7 +117,7 @@ a {
   padding-top: 0;
 }
 .section-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 /* Секция герой*/
 
@@ -125,6 +126,8 @@ a {
   width: 1600px;
 
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   color: var(--white-text-color);
@@ -181,7 +184,6 @@ a {
   margin: 0;
 }
 .quality-list {
-  outline: 2px solid tomato;
   display: flex;
   padding: 0;
   margin: 0;
@@ -190,6 +192,7 @@ a {
 .list + .list {
   margin-left: 30px;
 }
+
 /*Наши услуги*/
 
 .section-title {
@@ -246,18 +249,27 @@ a {
   font-family: 'Raleway', sans-serif;
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 26 px;
+  font-size: 26px;
   line-height: 1.19em;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.list-address {
+  list-style: none;
+}
+.list-address:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer .logo-studio {
   color: var(--white-text-color);
 }
 .footer {
   background: var(--hero-footer-color);
-  height: 252px;
+  padding: 0;
 }
 .contacts {
   font-style: normal;
+  padding-bottom: 60px;
 }
 .contact-letter {
   color: var(--white-text-color);
@@ -271,6 +283,7 @@ a {
   line-height: 1.71em;
   text-decoration: none;
 }
+
 .link-mail:focus,
 .link-mail:hover {
   color: var(--accent-color);
@@ -283,6 +296,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /*Портфолио работ*/
 
 .filter-button {
@@ -290,6 +304,9 @@ a {
   font-size: 16px;
   line-height: 1.63em;
   text-align: center;
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -297,18 +314,56 @@ a {
   background-color: var(--accent-color);
   cursor: pointer;
 }
-.portfolio-item {
+
+.title-item {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .text-item {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
-.portfolio-list {
+.buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+}
+.list-button {
+  display: flex;
+}
+
+.list-button:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portfolio > .card-list {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 370px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  margin: 0;
 }
