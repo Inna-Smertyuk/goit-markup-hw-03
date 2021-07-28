@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="page">
+<body>
     <!--Шапка сайта-->
     <header class="section-header" >
         <div class="container main-nav">
@@ -33,16 +33,16 @@
     </header>
 
 
-    <main class="main">
+    <main>
        <!--Герой-->
-        <section class="section hero">
+        <section class="hero">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button"><span class="button-primary">Заказать услугу</span></button>
         </section>
        
         <!--Преимущества-->
         
-        <section class="section quality">
+        <section class="section">
             <div class="container">
                 <h2 class="hidden-title">Преимущества</h2>
 
@@ -70,7 +70,7 @@
 
         <!--Наши услуги-->
         <section class="section no-padding">
-            <div class="container work">
+            <div class="container">
              <h2 class="section-title">Чем мы занимаемся</h2>
              <ul class="list-works">
                  <li class="list"><img src="./images/box1.jpg" alt="разработка сайта" width="370" height="294"/></li>
@@ -87,23 +87,34 @@
                 <ul class="team-cards">
                     <li class="list team-item">
                         <img src="./images/img4.jpg" alt="фото Игоря Демьяненка" width="270" height="260"/>
-                        <h3 class="title-card">Игорь Демьяненко</h3>
-                        <p class="subtitle">Product Designer</p>
+                        <div class="content-card">
+                            <h3 class="title-card">Игорь Демьяненко</h3>
+                            <p class="subtitle">Product Designer</p>
+                        </div>
                     </li>
+
                      <li class="list team-item">
                         <img src="./images/img5.jpg" alt="фото Ольги Репиной" width="270" height="260"/>
-                        <h3 class="title-card">Ольга Репина</h3>
-                        <p class="subtitle">Frontend Developer</p>
-                    </li>     
+                        <div class="content-card">
+                            <h3 class="title-card">Ольга Репина</h3>
+                            <p class="subtitle">Frontend Developer</p>
+                        </div>
+                    </li>   
+
                      <li class="list team-item">
                          <img src="./images/img6.jpg" alt="фото Николая Тарасова" width="270" height="260"/>
-                         <h3 class="title-card">Николай Тарасов</h3>
-                         <p class="subtitle">Marketing</p>
+                        <div class="content-card">
+                            <h3 class="title-card">Николай Тарасов</h3>
+                            <p class="subtitle">Marketing</p>
+                        </div>
                     </li>
+
                     <li class="list team-item">
                         <img src="./images/img7.jpg" alt="фото Михаила Ермакова" width="270" height="260"/>
-                        <h3 class="title-card">Михаил Ермаков</h3>
-                        <p class="subtitle">UI Designer</p>
+                        <div class="content-card">
+                            <h3 class="title-card">Михаил Ермаков</h3>
+                            <p class="subtitle">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -112,7 +123,7 @@
     </main>
 
     <!--Футер-->
-    <footer class="footer section">
+    <footer class="footer">
         <div class="container">
             <a class="footer-logo" href= "./index.html">Web<span class="logo-studio">Studio</span></a>
              <address class="address">
